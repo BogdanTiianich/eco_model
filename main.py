@@ -5,11 +5,11 @@ pd.set_option('display.max_rows', 10000)
 pd.set_option('display.max_columns', 100)
 pd.set_option('display.max_colwidth', 100)
 #parameters можно менять
-HOSTNAME = 'ra1dsm'
-SERVICE_NAME = 'DEV14'
-USERNAME = 'uq'
-PASSWORD = 'tvy86-Eq45'
-ENCODING = 'UTF-8'
+HOSTNAME = 
+SERVICE_NAME = 
+USERNAME = '
+PASSWORD = '
+ENCODING = 
 dsn_tsn = cx_Oracle.makedsn(HOSTNAME, 1521, service_name=SERVICE_NAME)
 con = cx_Oracle.connect(USERNAME, PASSWORD, dsn_tsn, encoding=ENCODING)
 dates = pd.read_excel("исходные данные.xlsx").astype(str)
